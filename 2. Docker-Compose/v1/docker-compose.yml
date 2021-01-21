@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  b2bdocker:
+    image: b2bdocker
+    volumes: 
+      - '.:/tmp'
+    build:
+      context: .
+      dockerfile: ./Dockerfile
