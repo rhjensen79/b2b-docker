@@ -1,6 +1,6 @@
 FROM ubuntu
 WORKDIR /tmp
 COPY . /tmp
-RUN apt update && apt -y install python
+RUN apt-get update && apt-get -y install python
 
 CMD ./start.sh
