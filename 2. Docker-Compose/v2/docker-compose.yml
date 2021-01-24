@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  b2bdocker:
+    image: www
+    ports:
+      - 80:80
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
