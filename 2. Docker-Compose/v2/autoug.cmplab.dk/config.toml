@@ -1,7 +1,7 @@
 baseURL = "https://autoug.cmplab.dk"
 languageCode = "en-us"
 theme = "SimpleIntro"
-title = "B2B Docker Demo for Automation User Group"
+title = "Automation User Group"
 publishDir = "public"
 
 [params]
