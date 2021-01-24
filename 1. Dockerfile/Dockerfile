@@ -2,9 +2,9 @@
 FROM ubuntu
 LABEL maintainer="jensenr@vmware.com"
 WORKDIR /tmp
-COPY . /tmp
+COPY . .
 EXPOSE 80/tcp
 ENV autoug=rocks
 RUN apt update && apt -y install python
 
-CMD ./start.sh
+ENTRYPOINT /tmp/start.sh

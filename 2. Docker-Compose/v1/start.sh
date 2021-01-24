@@ -1,2 +1,3 @@
+#! /bin/sh
 mkdir its_working
-sleep 180s
+sleep 320s
