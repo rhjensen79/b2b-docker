@@ -2,10 +2,23 @@ version: '3.9'
 
 services:
   b2bdocker:
-    image: www
+    image: autoug
     ports:
-      - 80:80
+      - 80
+    networks:
+      - web
     build:
       context: .
       dockerfile: ./Dockerfile
     restart: always
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.autoug.rule=Host(`autoug.cmplab.dk`)"
+        - "traefik.http.routers.autoug.entrypoints=websecure"
+        - "traefik.http.routers.autoug.tls=true"
+        - "traefik.http.routers.autoug.tls.certresolver=myresolver"
+        - "traefik.http.services.autoug.loadBalancer.server.port=80"
+
+networks:
+  web:
+    external: true
