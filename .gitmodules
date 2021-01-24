@@ -1,0 +1,3 @@
+[submodule "2. Docker-Compose/v2/autoug.cmplab.dk/themes/SimpleIntro"]
+	path = 2. Docker-Compose/v2/autoug.cmplab.dk/themes/SimpleIntro
+	url = https://github.com/gangjun06/SimpleIntro
