@@ -2,12 +2,13 @@ version: '3.9'
 
 services:
   b2bdocker:
+    container_name: b2bdocker_compose
     image: b2bdocker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     volumes: 
       - '.:/tmp'
     ports:
       - 80:80
-    build:
-      context: .
-      dockerfile: ./Dockerfile
     restart: always
