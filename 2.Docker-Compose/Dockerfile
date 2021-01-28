@@ -5,6 +5,6 @@ WORKDIR /tmp
 COPY . .
 EXPOSE 80/tcp
 ENV autoug=rocks
-RUN apt update && apt -y install python
+#RUN apt update && apt -y install python
 
 ENTRYPOINT /tmp/start.sh
