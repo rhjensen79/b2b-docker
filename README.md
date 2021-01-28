@@ -1,6 +1,5 @@
-# Usefull Containers
+# Back 2 Basics demo repository
 
-## PowerCLI Core
-https://github.com/vmware/powerclicore
+Used for the B2B Docker presentation, for www.autoug.io in January 2021 by @rhjensen79
 
-Command : docker run --rm -it vmware/powerclicore
+Presentations is in root. 
